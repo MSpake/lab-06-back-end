@@ -30,4 +30,7 @@ end: 12:55
   
 ## Credits and Collaborations  
 Morgana Spake, majority of the brain juice  
+(navigated for setup and location, drove for weather)  
+  
 Jon Ramer, majority of the keystrokes  
+(navigated for weather, drove for setup and location)  
