@@ -8,6 +8,13 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
+function Geo_data_object(search_query, formatted_query, latitude, longitude) {
+    this.search_query = search_query;
+    this.formatted_query = formatted_query;
+    this.latitude = latitude;
+    this.longitude = longitude;
+}
+
 app.get('/location', (request, response) => {
     response.send(search_location(request.query.data));
 })
@@ -22,10 +29,9 @@ function search_location(front_end_query) {
     const latitude = geo_data.results[0].geometry.location.lat;
     const longitude = geo_data.results[0].geometry.location.lng;
 
-    const location_object = {search_query, formatted_query, latitude, longitude};
+    const location_object = new Geo_data_object(search_query, formatted_query, latitude, longitude);
 
     return location_object;
 }
-
 
 app.listen(PORT,() => console.log(`Listening on port ${PORT}`));
