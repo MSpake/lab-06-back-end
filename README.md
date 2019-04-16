@@ -4,18 +4,30 @@
 **Version**: 1.0.0  
   
 ## Overview  
-This app is intended to take a user input city location and return map, weather, yelp, movie, and hiking information for the searched city.  
+This app is intended to take a user input city location and return map, weather, yelp, movie, and hiking information for the searched city  
   
 ## Getting Started  
-Clone or download the code and run using live-server.  
+Clone or download the code and run using live-server  
   
 ## Architecture  
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->  
+Input location from user, call to darksky weather api and geo api to display location map info and weather forecast for next eight days  
   
 ## Change Log  
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:  
+First session, built server  
+estimated time 1 hr, actual time 1 hr  
+start: 9:45  
+end: 10:45  
   
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource.  
+Second session, location get and display working   
+estimated time 1 hr, actual time 45 min  
+start: 10:45  
+end: 11:30  
+  
+Third session, get and display weather
+estimated time 1 hr, actual 1 hr 10 min  
+start: 11:45  
+end: 12:55  
   
 ## Credits and Collaborations  
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->  
+Morgana Spake, majority of the brain juice  
+Jon Ramer, majority of the keystrokes  
